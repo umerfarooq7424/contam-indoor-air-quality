@@ -1,0 +1,47 @@
+ScheduleLibrary ContamW 3.4.0.4
+
+4 ! day-schedules:
+! # npts shap utyp ucnv name
+  1    2    0    1    0 ApartOffSunHol
+Sundays and holidays for apartment Office
+ 00:00:00 0
+ 24:00:00 0
+  2    6    0    1    0 ApartOffWkDay
+Weekdays for Apartment Office
+ 00:00:00 0
+ 09:00:00 1
+ 13:00:00 0.5
+ 14:00:00 1
+ 18:00:00 0
+ 24:00:00 0
+  3    9    0    1    0 Apartment
+
+ 00:00:00 1
+ 08:00:00 0.85
+ 09:00:00 0.39
+ 10:00:00 0.25
+ 17:00:00 0.3
+ 18:00:00 0.52
+ 19:00:00 0.87
+ 22:00:00 1
+ 24:00:00 1
+  4    4    0    1    0 AptOffOAwkday
+
+ 00:00:00 0
+ 08:00:00 1
+ 17:00:00 0
+ 24:00:00 0
+-999
+3 ! week-schedules:
+! # utyp ucnv name
+  1    1    0 ApartOffOcc
+Apartment Office Occupancy
+ 1 2 2 2 2 2 1 1 1 1 1 1
+  2    1    0 ApartmentOcc
+Apartment Occupancy
+ 3 3 3 3 3 3 3 3 3 3 3 3
+  3    1    0 OffOutsideAir
+
+ 1 4 4 4 4 4 1 1 1 1 1 1
+-999
+* end library.

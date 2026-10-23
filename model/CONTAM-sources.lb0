@@ -1,0 +1,61 @@
+ContaminantLibrary ContamW 3.4.0.4
+
+0 ! contaminants:
+5 ! species:
+! # s t   molwt    mdiam       edens       decay         Dm         CCdef        Cp          Kuv     u[5]      name
+  1 0 0  44.0000  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  5.4699e-04  0.0000e+00  0.0000e+00 1 0 0 0 0 CO2
+
+  2 0 0  46.0060  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00 0 0 0 0 0 NO2
+
+  3 0 0  48.0000  0.0000e+00  0.0000e+00  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 0 0 0 0 Ozone
+
+  4 0 0   1.0000  3.0000e-07  1.0000e+03  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 6 0 0 0 PM2.5
+
+  5 0 0  92.0000  0.0000e+00  0.0000e+00  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 0 0 0 0 VOC
+
+-999
+0 ! exposure limits:
+-999
+0 ! filter elements:
+-999
+0 ! kinetic reactions:
+-999
+12 ! source/sink elements:
+1 PM2.5 ccf Cigarette
+
+ 1.66667e-08 0 17 0
+2 VOC brs Cleaning
+
+ 8e-05 2
+3 PM2.5 ccf ElectricStovePM
+
+ 1.3e-08 0 17 0
+4 NO2 ccf GasStoveNO2
+
+ 1.83333e-08 0 17 0
+5 PM2.5 ccf GasStovePM25
+
+ 2.6e-08 0 17 0
+6 PM2.5 brs KittyLitter
+
+ 7.06858e-09 3
+7 NO2 eds NO2Decay
+
+ 0 0.000241667 0 2
+8 VOC ccf OccVOC
+
+ 1.38889e-10 0 29 0
+9 Ozone drs OzoneDeposition
+
+ 0.00111111 2
+10 PM2.5 drs PMdeposition
+
+ 0.000138889 2
+11 PM2.5 ccf SpaceHeater
+
+ 7e-08 0 5 0
+12 CO2 ccf person
+one person
+ 9.14761e-06 0 21 0
+-999
+* end library.

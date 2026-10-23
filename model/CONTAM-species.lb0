@@ -1,0 +1,42 @@
+ContaminantLibrary ContamW 3.4.0.4
+
+0 ! contaminants:
+5 ! species:
+! # s t   molwt    mdiam       edens       decay         Dm         CCdef        Cp          Kuv     u[5]      name
+  1 0 0  44.0000  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  5.4699e-04  0.0000e+00  0.0000e+00 1 0 0 0 0 CO2
+
+  2 0 0  46.0060  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00 0 0 0 0 0 NO2
+
+  3 0 0  48.0000  0.0000e+00  0.0000e+00  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 0 0 0 0 Ozone
+
+  4 0 0   1.0000  3.0000e-07  1.0000e+03  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 6 0 0 0 PM2.5
+
+  5 0 0  92.0000  0.0000e+00  0.0000e+00  0.0000e+00  2.0000e-05  0.0000e+00  1.0000e+03  0.0000e+00 0 0 0 0 0 VOC
+
+-999
+0 ! exposure limits:
+-999
+1 ! filter elements:
+1 cef 1 0.1 100 0 0 Filter
+
+  2
+  PM2.5 0.25
+  Ozone 0.05
+-999
+0 ! kinetic reactions:
+-999
+4 ! source/sink elements:
+1 VOC ccf OccVOC
+
+ 1.38889e-10 0 29 0
+2 Ozone drs OzoneDeposition
+
+ 0.00111111 2
+3 PM2.5 drs PMdeposition
+
+ 0.000138889 2
+4 CO2 ccf person
+one person
+ 9.14761e-06 0 21 0
+-999
+* end library.
